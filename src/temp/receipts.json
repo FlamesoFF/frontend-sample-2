@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "client": "ABC LTD.",
+      "unallocated": 1000.0
+    },
+    {
+      "client": "QWERTY SRO.",
+      "unallocated": 10000.0
+    }
+  ]
+}

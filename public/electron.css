@@ -1,0 +1,71 @@
+#titlebar {
+	width: 100vw;
+	background-color: #1E88E5;
+    -webkit-app-region: drag;
+    user-select: none;
+}
+
+.win32 #titlebar {
+    height: 32px;
+}
+
+.darwin #titlebar {
+    height: 22px;
+    max-height: 22px;
+    transition: height 0.2s, max-height 0.2s;
+}
+
+.darwin #titlebar.full-screen {
+    max-height: 0;
+}
+
+.win32 #titlebar .title-buttons {
+    float: right;
+    padding-right: 4px;
+    height: 100%;
+    -webkit-app-region: no-drag;
+}
+
+.darwin #titlebar .title-buttons {
+    display: none;
+}
+
+.win32 #titlebar .title-buttons .button {
+    display: inline-block;
+    background: none;
+    height: 100%;
+    padding-top: 5px;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    transition: all 0.1s;
+}
+
+.win32 #titlebar .title-buttons .button:hover {
+    color: white;
+}
+
+.win32 #titlebar .title-buttons .button:active {
+    transform: translateY(1px);
+}
+
+#version {
+    display: inline-block;
+    position: absolute;
+    font-family: 'Roboto Condensed', Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.win32 #version {
+    left: 12px;
+    top: 10px;
+}
+
+.darwin #version {
+    right: 8px;
+    top: 4px;
+}
